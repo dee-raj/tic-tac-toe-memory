@@ -86,7 +86,7 @@ const MemoryGame = () => {
 
 
     return (
-        <div className='flex flex-col items-center justify-center bg-grey-100 p-4'>
+        <div className='flex flex-col items-center justify-center bg-grey-100 p-4 mb-4'>
             <h1 className='text-3xl font-bold mb-6'>Memory Game</h1>
 
             {/* input  */}

@@ -17,14 +17,19 @@ function App() {
   return (
     <>
       <header className='text-3xl font-extrabold text-center text-gray-500'>Hey; There!</header>
-      <section className='text-center'>
+      <section className='text-center justify-center'>
         <legend className='mt-4 font-mono mb-4'>Select which game you want to play.</legend>
-        <button
-          onClick={() => setIsOne(!isOne)}
-          className='bg-purple-200 px-4 py-1 max-w-md rounded  hover:bg-purple-300 hover:w-1/5 hover:py-2 hover:rounded-md'
-        >
-          {!isOne ? 'Memory game.' : 'Tic-Tac-Toe game.'}
-        </button>
+        <div className='flex flex-row items-center justify-between content-between'>
+          <p className={`text-blue-900 px-4 py-2 text-xl ${isOne && 'font-bold'}`}>Memory game</p>
+          <button
+            onClick={() => setIsOne(!isOne)}
+            className='bg-purple-200 px-4 py-1 rounded-3xl font-bold min-w-fit max-w-max'
+          >
+            {isOne ? "<-" : "->"}
+          </button>
+          <p className={`text-amber-500 px-4 py-2 font-bold text-xl ${isOne && 'font-normal'}`}>Tic-Tac-Toe game</p>
+        </div>
+        <hr className='h-2 bg-indigo-400' />
       </section>
       <TTT_or_MG />
 
