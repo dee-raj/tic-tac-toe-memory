@@ -8,6 +8,8 @@ This project features two classic games—Tic-Tac-Toe and Memory—built using R
 
 - **Memory Game**: A concentration game with a dynamic board size, allowing players to select the grid dimensions before starting. Players flip over pairs of matching cards to test and improve memory skills.
 
+Play [Now](https://tic-tac-toe-memory-game.vercel.app/).
+
 ## Prerequisites
 
 Ensure you have the following installed:
